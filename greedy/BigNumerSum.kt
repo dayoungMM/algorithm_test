@@ -1,4 +1,4 @@
-package `03greedy`
+package greedy
 
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit

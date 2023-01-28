@@ -1,4 +1,4 @@
-package `03greedy`
+package greedy
 
 class UntilOne {
     companion object{
