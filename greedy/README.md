@@ -35,3 +35,6 @@
 > 문자열 S가 주어졌을 때, 다솜이가 해야하는 행동의 최소 횟수를 출력하시오.
 > 
 [출처: https://www.acmicpc.net/problem/1439](https://www.acmicpc.net/problem/1439)
+
+## 4.ImpossibleAmount
+> N개의 동전을 이용하여 만들 수 없는 양의 정수 금액 중 최소값을 구하시오
