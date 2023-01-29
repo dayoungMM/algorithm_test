@@ -14,6 +14,14 @@ class SelectBowling {
                     countList[it-1] += 1
                 }
             }
+
+//            println(mysolution(countList, balls, m))
+            println(answer(countList, balls, m, n))
+
+        }
+
+        private fun mysolution(cntList: MutableList<Int>, balls:List<Int>, m: Int): Int {
+            var countList = cntList
             var result = 0
             // index0부터 선택, 다른 무게들 공의 갯수의 합
             balls.forEach {
@@ -28,8 +36,19 @@ class SelectBowling {
                 // 내 무게의 공 개수 하나 줄이기
                 countList[it-1] -=1
             }
+            return result
+        }
 
-            println(result)
+        private fun answer(cntList: MutableList<Int>, balls: List<Int>, m:Int, n:Int):Int {
+            var totalLen = n
+            var countList = cntList
+            var result = 0
+            for (i in 0 until m) {
+                totalLen -= cntList[i]
+                //A가 고른 개수 * B가 고를 수 있는 개수
+                result += cntList[i] * totalLen
+            }
+            return result
         }
     }
 }
