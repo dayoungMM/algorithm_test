@@ -39,3 +39,8 @@
 
 ## 자물쇠와 열쇠(LockerKey)
 > [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
+- 자물쇠를 중간에 위치시키는 과정에서 for문을 돌 때 for (i in 0 until locker.size) 이런식으로 자물쇠의 크기만큼 반복해야하는데, 키의 크기만큼 반복해서 에러가 있었다.
+- 
+
+## 뱀
+> [문제 바로가기](https://)

@@ -82,10 +82,10 @@ class LockerKey {
                         if (check(newArr)) {
                             return true
                         } else {
-                            // 열쇄 빼기
+                            // 열쇠 빼기
                             for (row in 0 until keyN) {
                                 for (col in 0 until keyN) {
-                                    newArr[i+row][j+col] -= rotatedKey[row][col]
+                                    newArr[i+row][j+col]    -= rotatedKey[row][col]
                                 }
                             }
                         }
