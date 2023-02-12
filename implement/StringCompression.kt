@@ -30,6 +30,7 @@ class StringCompression {
                 for (j in step until length - step step step) {
                     // 이전 상태와 동일하면 압축횟수 증가
                     if (previous == s.substring(j until j + step)) {
+
                         duplicateCnt += 1
                     } else {
                         val addString = if (duplicateCnt > 0) {
@@ -54,6 +55,7 @@ class StringCompression {
                 compressed += addString
 
                 result.add(compressed.length)
+                compressed = String()
             }
             return result.minOrNull() ?: length
         }
