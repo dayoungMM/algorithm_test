@@ -10,7 +10,7 @@
 - 별찍기2 (Stars2.kt)
 > https://www.acmicpc.net/problem/10994
 - 별찍기3 (Stars3.kt)
-> https://zoosso.tistory.com/439
+> https://www.acmicpc.net/problem/10993
 
 ### 스택문제
 - 균형잡힌 세상 (OpenClosed.kt)
@@ -22,3 +22,4 @@
 - 요세푸스 문제 0 (Josephus.kt)
 > https://www.acmicpc.net/problem/11866
 - 트럭(Truck.kt)
+> https://www.acmicpc.net/problem/13335

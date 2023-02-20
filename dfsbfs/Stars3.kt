@@ -1,5 +1,6 @@
 package dfsbfs
 
+import java.lang.StringBuilder
 import kotlin.math.pow
 
 class Stars3 {
@@ -16,7 +17,15 @@ class Stars3 {
                 star(verticalLen(n)-1, 0, n)
             }
             answer.forEach {
-                println(it.joinToString(""))
+                var lastIndex = 0
+                for (i in 0 until it.size){
+                    if (it[i] == "*") {
+                        lastIndex = i
+                    }
+                }
+                val sliced =  it.slice(0..lastIndex)
+                println(sliced.joinToString (""))
+//                println(it.joinToString(""))
             }
 
         }
@@ -55,7 +64,7 @@ class Stars3 {
                     answer[x-i][y+ horizontalLen(n) -i-1] = "*"
                     answer[x-i][y+i] = "*"
                 }
-                star(x- verticalLen(n)/2-1, y+ verticalLen(n)/2 +1, n-1)
+                star(x- verticalLen(n)/2, y+ verticalLen(n)/2 +1, n-1)
             }
         }
 
@@ -73,4 +82,4 @@ class Stars3 {
 // 윗변/밑변의 개수: 2^n -1
 // 빗변의 개수: 2^(n+1) -3
 //import kotlin.math.*
-//틀렸는데 어디를 더 고쳐야할지 모르겠음
+//틀렸는데 어디를 더 고쳐야할지 모르겠음 - 별의 오른쪽 부분은 출력이 되면 안됨(공백도 안됨)
