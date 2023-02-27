@@ -2,7 +2,7 @@ package dfsbfs
 
 class Laboratory {
     // 벽 설치하는 조건에 대해서 아이디어가 생각나지 않아 답보고 함
-    // 어차피 안퍼지게 하려면 퍼지는 진원지로부터 가까운곳에 설치해야하므로 dfs 하면서 바로바로 설치
+    // dfs로 3번의 depth가 되도록 울타리 설치해보고 return 한 후 울타리 제거하는 형식으로 모든 경우의 수 다 탐색
     companion object{
         @JvmStatic
         fun main(args: Array<String>) {
@@ -23,8 +23,8 @@ class Laboratory {
             //바이러스 퍼지기 시뮬레이션
             fun virus(x: Int, y:Int){
                 turn.forEach{
-                    val nx = it.first
-                    val ny = it.second
+                    val nx = x + it.first
+                    val ny = y + it.second
                     if (nx >=0 && nx < n && ny>=0 && ny < m){
                         // 미감염일 경우 감염시킴
                         if (finalGraph[nx][ny] == 0) {
@@ -51,7 +51,7 @@ class Laboratory {
             // 울타리 설치하면서 안전영역 계산 (울타리 최대 설치개수: count)
             fun dfs(count: Int){
                 //울타리 3개 설치되면 안전영역 계산
-                if (count ==1){
+                if (count ==3){
                     //복사
                     for (i in 0 until n){
                         for (j in 0 until m){
