@@ -80,3 +80,29 @@ answer
 
 - 연구소(Laboratory.kt)
 > https://www.acmicpc.net/problem/14502
+
+- 경쟁적 감염(Virus.kt)
+> https://acmicpc.net/problem/18405
+input
+```
+3 4
+1 0 0
+0 2 0
+3 0 4
+2 2 3
+```
+answer
+```
+2
+```
+
+- 괄호변환(ChangeBrackets.kt)
+> https://school.programmers.co.kr/learn/courses/30/lessons/60058
+
+- 연산자 끼워넣기(InsertOperator.kt)
+> https://www.acmicpc.net/problem/14888
+
+- 감시피하기 (AvoidSurveillance.kt)
+> https://www.acmicpc.net/problem/18428
+
+- 인구이동 ()
