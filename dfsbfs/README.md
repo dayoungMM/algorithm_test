@@ -105,4 +105,7 @@ answer
 - 감시피하기 (AvoidSurveillance.kt)
 > https://www.acmicpc.net/problem/18428
 
-- 인구이동 ()
+- 인구이동 (PopulationTransfer.kt)
+
+- 블록 이동하기(move_block.py)
+> https://school.programmers.co.kr/learn/courses/30/lessons/60063
