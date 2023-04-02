@@ -7,8 +7,6 @@ def count(array, left_value, right_value):
     left_index = bisect_left(array, left_value)
     return right_index - left_index
 
-
-
 if __name__ == '__main__':
     n, x = map(int, input().split())
     arr = list(map(int, input().split()))
