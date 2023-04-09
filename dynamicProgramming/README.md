@@ -7,3 +7,7 @@
 - 바닥공사 (floor.py)
 - 효율적인 화폐구성 (currency.py)
 - 금광 (mine.py)
+- 정수 삼각형 (triangle.py)
+- 퇴사(regination.py)
+- 병사 배치 (soldiers.py)
+- 못생긴수 (ugly_number.py)
