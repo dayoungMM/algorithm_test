@@ -11,3 +11,6 @@
 
 ## 문제
 - 미래 도시(future.py)
+- 전보 (telegram.py)
+- 플로이드(floyd.py)
+- 정확한 순위(ranking.py)
