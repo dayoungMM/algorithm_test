@@ -14,3 +14,5 @@
 - 전보 (telegram.py)
 - 플로이드(floyd.py)
 - 정확한 순위(ranking.py)
+- 화성 탐사(mars_exploration.py)
+- 숨바꼭질(hide_seek.py)
